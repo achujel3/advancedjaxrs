@@ -38,4 +38,11 @@ public class MyDate {
                 ", year=" + year +
                 '}';
     }
+
+    public String shortToString() {
+        return "MyDate{" + date +
+                "." + month +
+                "." + year +
+                '}';
+    }
 }
