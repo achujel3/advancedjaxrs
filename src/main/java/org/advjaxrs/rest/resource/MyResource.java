@@ -1,4 +1,4 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

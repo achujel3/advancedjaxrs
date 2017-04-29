@@ -1,4 +1,4 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.model;
 
 public class MyDate {
 

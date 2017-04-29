@@ -1,4 +1,4 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.writers;
 
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
@@ -13,8 +13,8 @@ import java.lang.reflect.Type;
 import java.util.Date;
 
 @Provider
-@Produces(MediaType.TEXT_PLAIN)
-public class DateMessageBodyWriter implements MessageBodyWriter<Date> {
+@Produces("text/shortdate")
+public class ShortDateMessageBodyWriter implements MessageBodyWriter<Date> {
 
 
     @Override
@@ -26,7 +26,8 @@ public class DateMessageBodyWriter implements MessageBodyWriter<Date> {
     public void writeTo(Date date, Class<?> aClass, Type type, Annotation[] annotations, MediaType mediaType,
                         MultivaluedMap<String, Object> multivaluedMap, OutputStream outputStream)
             throws IOException, WebApplicationException {
-        outputStream.write(date.toString().getBytes());
+        String shortdate = date.getYear() + "." + date.getMonth() + "." + date.getDay();
+        outputStream.write(shortdate.getBytes());
     }
 
     @Override

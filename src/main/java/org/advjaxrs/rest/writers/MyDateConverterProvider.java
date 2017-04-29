@@ -1,4 +1,6 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.writers;
+
+import org.advjaxrs.rest.model.MyDate;
 
 import javax.ws.rs.ext.ParamConverter;
 import javax.ws.rs.ext.ParamConverterProvider;

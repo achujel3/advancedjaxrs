@@ -1,4 +1,4 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.client;
 
 import org.advjaxrs.rest.message.TestRestApp.model.Message;
 

@@ -1,4 +1,4 @@
-package org.advjaxrs.rest;
+package org.advjaxrs.rest.main;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
